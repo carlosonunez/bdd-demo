@@ -1,0 +1,33 @@
+---
+version: "3.7"
+services:
+  slides:
+    user: root
+    build:
+      dockerfile: slides.Dockerfile
+      context: .
+    volumes:
+      - "$PWD/slides.md:/app/slides.md"
+    ports:
+      - 80:8000
+
+  cucumber:
+    links:
+      - browser
+    build:
+      context: .
+    volumes:
+      - "$PWD/slides:/app/slides.md"
+    working_dir: /app
+  browser:
+    links:
+      - website
+    image: selenium/standalone-firefox
+    ports:
+      - 5900:5900
+    volumes:
+      - /dev/shm:/dev/shm
+  website:
+    image: nginx
+    volumes:
+      - "$PWD/site:/usr/share/nginx/html"
