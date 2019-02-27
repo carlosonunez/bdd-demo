@@ -10,21 +10,21 @@ services:
       - "$PWD/slides.md:/app/slides.md"
     ports:
       - 80:8000
-
   cucumber:
     links:
       - browser
     build:
       context: .
     volumes:
-      - "$PWD/slides:/app/slides.md"
+      - "$PWD:/app"
     working_dir: /app
+    command: --version
   browser:
     links:
       - website
-    image: selenium/standalone-firefox
+    image: selenium/standalone-firefox-debug
     ports:
-      - 5900:5900
+      - 5950:5900
     volumes:
       - /dev/shm:/dev/shm
   website:

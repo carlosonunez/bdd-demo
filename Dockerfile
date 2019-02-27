@@ -11,6 +11,7 @@ RUN apk add --no-cache libc-dev \
   build-base
 RUN gem install nokogiri -- --use-system-libraries
 RUN gem install capybara cucumber selenium-webdriver
+RUN gem install rspec
 
 ENTRYPOINT ["cucumber"]
 
