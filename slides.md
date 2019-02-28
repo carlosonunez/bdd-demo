@@ -4,7 +4,7 @@ title: "Winning at Behavior-Driven Development With Cucumber and Ruby"
 
 <!--- .slide: data-background="https://edge.bonnieplants.com/www/uploads/20180920001927/BONNIE_cucumbers_iStock-900811876_1800px.jpg" -->
 
-### Winning at BDD with Cucumber and Ruby
+### Winning at Behavior Driven Development with Cucumber and Ruby
  
 **Carlos Nunez**
 
@@ -12,9 +12,14 @@ title: "Winning at Behavior-Driven Development With Cucumber and Ruby"
 
 ---
 
+# 🤔
+# Why BDD?
+
+---
+
 ![](https://images.theconversation.com/files/171209/original/file-20170526-6421-1j3azw3.jpg?ixlib=rb-1.1.0&rect=0%2C360%2C6016%2C2917&q=45&auto=format&w=1356&h=668&fit=crop)
 
-BDD bridges product and engineering.
+Behavior Driven Development bridges product and engineering.
 
 ---
 
@@ -44,3 +49,9 @@ Cucumber and Ruby makes BDD in plain ol' English possible.
 ---
 
 # Thanks! 👏🏾
+
+**Demo**: https://github.com/carlosonunez/bdd-demo
+
+**Learn more about Capybara!**: https://github.com/teamcapybara/capybara
+
+**Learn more about Cucumber!**: https://cucumber.io/
